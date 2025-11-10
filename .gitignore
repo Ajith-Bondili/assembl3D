@@ -22,6 +22,7 @@ backend/data/cache/
 # IDE
 .vscode/
 .idea/
+.cursor/
 *.swp
 *.swo
 *~
