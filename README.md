@@ -167,6 +167,3 @@ NEXT_PUBLIC_API_URL=http://localhost:3001
 REKA_API_KEY=your_key
 ```
 
----
-
-Built at Cal Hacks 12.0 🏆
