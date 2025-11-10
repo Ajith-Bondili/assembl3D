@@ -1,10 +1,14 @@
 # assembl3D
 
-**Bring 2D Assembly Instructions to Life**
+**Copilot for Assembly**
 
-![Demo](./backend/demo_optimized.gif)
+![Demo](./demo.gif)
 
 An AI-powered platform that transforms static PDF assembly manuals into interactive 3D assembly guides. The system leverages web scraping, computer vision, and 3D rendering to extract structured assembly instructions from furniture manuals and present them in an immersive, step-by-step visualization environment.
+
+**[Watch Full Demo Video](https://www.youtube.com/watch?v=c-3XQTTbKns)** 
+
+**[View Devpost Submission](https://devpost.com/software/assembl3d)**
 
 ## Architecture Overview
 
@@ -15,6 +19,29 @@ The application follows a microservices architecture with a Node.js/Express back
 3. **Data Transformation**: Transforms AI-extracted data into Three.js-compatible scene graphs with geometric primitives, materials, and animations
 4. **3D Rendering Engine**: React Three Fiber-based viewer with interactive controls, part highlighting, cumulative scene building, and real-time step navigation
 
+## Quick Start
+
+You'll need Node.js 18+ and API keys for [Bright Data](https://brightdata.com) and [Google Gemini](https://ai.google.dev).
+
+**Backend:**
+```bash
+cd backend
+npm install
+cp .env.example .env
+# Add your API keys
+npm run dev
+```
+
+**Frontend:**
+```bash
+cd frontend
+npm install
+cp .env.example .env.local
+# Add NEXT_PUBLIC_API_URL=http://localhost:3001
+npm run dev
+```
+
+Visit `http://localhost:3000` to get started.
 
 ## Project Structure
 
@@ -144,3 +171,6 @@ NEXT_PUBLIC_API_URL=http://localhost:3001
 REKA_API_KEY=your_key
 ```
 
+---
+
+Built at Cal Hacks 12.0 🏆
